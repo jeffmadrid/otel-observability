@@ -1,5 +1,0 @@
-app:
-  name: otel-observability
-  group: backend
-  container:
-    image: otel-observability

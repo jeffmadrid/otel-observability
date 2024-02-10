@@ -27,8 +27,8 @@ minikube image ls
 
 ```shell
 # make sure you have imagePullPolicy: IfNotPresent on specs
-helm install -f app-k8s.yml app-k8s ./app
+helm install otel-observability ./helm
 
 # to undeploy
-helm uninstall app-k8s
+helm uninstall otel-observability
 ```
