@@ -14,4 +14,10 @@ class AppController {
         log.info { "Hi there!" }
         return "hello world"
     }
+
+    @GetMapping("/hello")
+    fun getHello() : String {
+        log.info { "Hi there!" }
+        return "helloooooooo"
+    }
 }
