@@ -13,7 +13,7 @@ class RestClientConfig {
     @Bean
     fun otelARestClient(builder: RestClient.Builder): OtelBApiClient {
         val restClient = builder
-            .baseUrl("http://otel-b-app.default.svc.cluster.local:8080")
+            .baseUrl("http://otel-b.default.svc.cluster.local:8080")
             .build()
         val adapter = RestClientAdapter.create(restClient)
         val factory = HttpServiceProxyFactory.builderFor(adapter).build()
