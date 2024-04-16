@@ -1,8 +1,8 @@
 # otel-observability
 
-# Getting started
+## Getting started
 
-## Kubernetes setup
+### Kubernetes setup
 
 Start up your own Kubernetes (`minikube` in this case)
 
@@ -11,24 +11,22 @@ minikube start
 minikube dashboard
 ```
 
-## Build the container image
+### Build
+
+Convenience scripts to simplify build, deploy and undeploy.
 
 ```shell
-eval $(minikube docker-env)
-
-./gradlew clean build
-
-docker build -t otel-observability .
-
-minikube image ls
+./build.sh
 ```
 
-## Deploy using Helm
+### Deploy
 
 ```shell
-# make sure you have imagePullPolicy: IfNotPresent on specs
-helm install otel-observability ./helm
+./deploy.sh
+```
 
-# to undeploy
-helm uninstall otel-observability
+### Undeploy
+
+```shell
+./undeploy.sh
 ```
