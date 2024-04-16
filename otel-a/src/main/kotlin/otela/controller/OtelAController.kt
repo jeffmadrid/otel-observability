@@ -21,7 +21,7 @@ class OtelAController(
     @GetMapping("/hello")
     fun getHello(): String {
         val res = otelBApiClient.getWorld()
-        val msg = "OTel B returned with $res"
+        val msg = "OTel B returned with $res on thread: ${Thread.currentThread()}"
         log.info { msg }
         return msg
     }
