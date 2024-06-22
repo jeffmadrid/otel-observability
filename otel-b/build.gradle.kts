@@ -1,13 +1,13 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    id("org.springframework.boot") version "3.2.2"
+    id("org.springframework.boot") version "3.3.1"
     id("io.spring.dependency-management") version "1.1.4"
 //	id("org.hibernate.orm") version "6.4.1.Final"
 //	id("org.graalvm.buildtools.native") version "0.9.28"
-    kotlin("jvm") version "1.9.22"
-    kotlin("plugin.spring") version "1.9.22"
-//	kotlin("plugin.jpa") version "1.9.22"
+    kotlin("jvm") version "2.0.0"
+    kotlin("plugin.spring") version "2.0.0"
+//	kotlin("plugin.jpa") version "2.0.0"
 }
 
 group = "com.github.jeffmadrid"
